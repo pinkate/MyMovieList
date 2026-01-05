@@ -1,0 +1,364 @@
+<!--打入"!"按Enter即自動出現基本架構-->
+<!DOCTYPE html> <!--文件類型的宣告-->
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>電影清單</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>我的電影清單</h1>
+        <p>好的電影改變你的認知</p>
+        <div class="filters">
+            <button onclick="filterByYear('all')">全部</button>
+            <button onclick="filterByYear('2025')">2025</button>
+            <button onclick="filterByYear('2026')">2026</button>
+        </div>
+    </header>
+
+    <!-- 主要內容 -->
+    <main>
+        <!-- 電影 -->
+        <div class="movie-card watched" data-year="2025">
+        <div class="poster">
+            <img src="Image/GodFather.jpg" alt="電影海報">
+        </div>
+        <div class="movie-info">
+            <h2>教父</h2>
+            <p class="tags">
+                <span class="tag year">2025</span>
+                <span class="tag status watched">已觀看</span>
+                <span class="tag">犯罪</span>
+                <span class="tag">劇情</span>
+                <span class="tag">經典</span>
+            </p>
+            <p class="meta">
+                <span>首次上映年份：2012</span>｜
+                <span>觀看日期：2025/03/04</span>
+            </p>
+            <p class="rating">⭐ 評分：4 / 5</p>
+            <p class="review">
+                紐約黑手黨大老的小兒子麥可·科里昂在軍中戰功彪炳，但在父親淪為他人暗殺的目標時加入了家族黑道活動。
+            </p>
+            <a
+                href="https://youtu.be/UaVTIH8mujA?si=zCL4QIzgMasC7655"
+                target="_blank"
+                class="trailer-link">
+                ▶ 在Youtube觀看預告片
+            </a>
+        </div>
+        </div>
+
+        <!-- 電影 -->
+         <div class="movie-card watched" data-year="2025">
+        <div class="poster">
+            <img src="Image/Schindler'sList.jpg" alt="電影海報">
+        </div>
+        <div class="movie-info">
+            <h2>辛德勒的名單</h2>
+            <p class="tags">
+                <span class="tag year">2025</span>
+                <span class="tag status watched">已觀看</span>
+                <span class="tag">戰爭</span>
+                <span class="tag">歷史</span>
+            </p>
+            <p class="meta">
+                <span>首次上映年份：1993</span>｜
+                <span>觀看日期：2025/03/06</span>
+            </p>
+            <p class="rating">⭐ 評分：4 / 5</p>
+            <p class="review">
+                在最黑暗的時代，一場名單，決定了千人的生死；一人的良知，撼動了世界！
+                這不是一份名單，這是生命。
+            </p>
+            <a
+                href="https://youtu.be/imClabQ7WuA?si=gr6FTVn4L_ainSiM"
+                target="_blank"
+                class="trailer-link">
+                ▶ 在Youtube觀看預告片
+            </a>
+        </div>
+        </div>
+
+        <!-- 電影 -->
+         <div class="movie-card watched" data-year="2025">
+        <div class="poster">
+            <img src="Image/MissionImpossible.jpg" alt="電影海報">
+        </div>
+        <div class="movie-info">
+            <h2>不可能的任務：最終清算</h2>
+            <p class="tags">
+                <span class="tag year">2025</span>
+                <span class="tag status watched">已觀看</span>
+                <span class="tag">動作片</span>
+            </p>
+            <p class="meta">
+                <span>首次上映年份：2025</span>｜
+                <span>觀看日期：2025/05/18</span>
+            </p>
+            <p class="rating">⭐ 評分：4 / 5</p>
+            <p class="review">
+                任務永無止盡，阿湯哥挑戰全新極限，與「生存體」AI展開最終對決，為了信念與人性，這場高速清算，你絕不能錯過！
+            </p>
+            <a
+                href="https://youtu.be/f1RNAslZPlY?si=uxPqOTMSTAPtlQeE"
+                target="_blank"
+                class="trailer-link">
+                ▶ 在Youtube觀看預告片
+            </a>
+        </div>
+        </div>
+
+        <!-- 電影 -->
+         <div class="movie-card watched" data-year="2025">
+        <div class="poster">
+            <img src="Image/鬼滅之刃.jpeg" alt="電影海報">
+        </div>
+        <div class="movie-info">
+            <h2>鬼滅之刃 無限城篇第一章 猗窩座再襲</h2>
+            <p class="tags">
+                <span class="tag year">2025</span>
+                <span class="tag status watched">已觀看</span>
+                <span class="tag">動漫</span>
+            </p>
+            <p class="meta">
+                <span>首次上映年份：2025</span>｜
+                <span>觀看日期：2025/08/23</span>
+            </p>
+            <p class="rating">⭐ 評分：4 / 5</p>
+            <p class="review">
+                宿命的對決！猗窩座再度來襲，炭治郎與水柱富岡義勇攜手迎戰，無限城內，血戰再起，至死方休！
+            </p>
+            <a
+                href="https://youtu.be/BVewQAMqLbw?si=sR-JKTsQEn41h34O"
+                target="_blank"
+                class="trailer-link">
+                ▶ 在Youtube觀看預告片
+            </a>
+        </div>
+        </div>
+
+        <!-- 電影 -->
+         <div class="movie-card watched" data-year="2025">
+        <div class="poster">
+            <img src="Image/鏈鋸人.jpg" alt="電影海報">
+        </div>
+        <div class="movie-info">
+            <h2>鏈鋸人蕾潔篇</h2>
+            <p class="tags">
+                <span class="tag year">2025</span>
+                <span class="tag status watched">已觀看</span>
+                <span class="tag">動漫</span>
+            </p>
+            <p class="meta">
+                <span>首次上映年份：2025</span>｜
+                <span>觀看日期：2025/10/27</span>
+            </p>
+            <p class="rating">⭐ 評分：4 / 5</p>
+            <p class="review">
+                為償還父母債務而替黑道打工的惡魔獵人淀治，被背叛殺害。危急之際，他與鏈鋸惡魔波奇塔締結契約，化身無敵「鏈鋸人」。當神秘少女蕾潔闖入他的世界，淀治將在殘酷的生存遊戲中，迎接史上最致命的對決與命運漩渦。
+            </p>
+            <a
+                href="https://youtu.be/qYcU41ew_BM?si=yHzEC-jvPJDHSFZL"
+                target="_blank"
+                class="trailer-link">
+                ▶ 在Youtube觀看預告片
+            </a>
+        </div>
+        </div>
+
+        <!-- 電影 -->
+         <div class="movie-card watched" data-year="2025">
+        <div class="poster">
+            <img src="Image/Constantine.jpg" alt="電影海報">
+        </div>
+        <div class="movie-info">
+            <h2>康斯坦汀：驅魔神探</h2>
+            <p class="tags">
+                <span class="tag year">2025</span>
+                <span class="tag status watched">已觀看</span>
+                <span class="tag">超自然</span>
+            </p>
+            <p class="meta">
+                <span>首次上映年份：2005</span>｜
+                <span>觀看日期：2025/12/14</span>
+            </p>
+            <p class="rating">⭐ 評分：4 / 5</p>
+            <p class="review">
+                康斯坦汀（基努李維飾）生下來就擁有他不想要的天賦，他能夠辨識藏身在人世間的混種天使和惡魔，他為了逃避這種能力給他的折磨，於是選擇自殺一途。但是他在自殺失敗之後被放逐在天堂與地獄之間的人世間，希望能藉由向地球上的魔鬼爪牙宣戰得到救贖。
+            </p>
+            <a
+                href="https://youtu.be/SIp5cZgFqY0?si=_di7fvaNNL7lECGT"
+                target="_blank"
+                class="trailer-link">
+                ▶ 在Youtube觀看預告片
+            </a>
+        </div>
+        </div>
+
+        <!-- 電影 -->
+         <div class="movie-card watched" data-year="2025">
+        <div class="poster">
+            <img src="Image/AvatarFireAndAsh.jpg" alt="電影海報">
+        </div>
+        <div class="movie-info">
+            <h2>阿凡達:火與燼</h2>
+            <p class="tags">
+                <span class="tag year">2025</span>
+                <span class="tag status watched">已觀看</span>
+                <span class="tag">科幻</span>
+                <span class="tag">動作</span>
+                <span class="tag">冒險</span>
+            </p>
+            <p class="meta">
+                <span>首次上映年份：2025</span>｜
+                <span>觀看日期：2025/12/25</span>
+            </p>
+            <p class="rating">⭐ 評分：4 / 5</p>
+            <p class="review">
+                第三部曲《阿凡達：火與燼》更要帶大家進入潘朵拉星球上從所未見的新領域，除了《阿凡達：水之道》新登場的納美礁人族—美卡伊納族，這次還會介紹兩支新的納美族群登場，帶來全新角色。另外本片格局也再度全面提升，精彩刺激的陸、海、空戰等突破視覺震撼的史詩級大戰場面，都將更勝以往！
+            </p>
+            <a
+                href="https://youtu.be/7-rGhVNwULA?si=XZTjiGzX_1WZcB2B"
+                target="_blank"
+                class="trailer-link">
+                ▶ 在Youtube觀看預告片
+            </a>
+        </div>
+        </div>
+
+        <!-- 電影 -->
+        <div class="movie-card wishlist" data-year="2026">
+        <div class="poster">
+            <img src="Image/F1.jpg" alt="電影海報">
+        </div>
+        <div class="movie-info">
+            <h2>F1</h2>
+            <p class="tags">
+                <span class="tag year">2026</span>
+                <span class="tag status wishlist">想看</span>
+                <span class="tag">動作片</span>
+                <span class="tag">運動</span>
+            </p>
+            <p class="meta">
+                <span>首次上映年份：2025</span>｜
+                <span>觀看日期：-</span>
+            </p>
+            <p class="rating">⭐ 評分：-</p>
+            <p class="review">
+                本片由《捍衛戰士：獨行俠》導演約瑟夫柯金斯基執導，布萊德彼特主演，影片為求逼真，於真實的「大獎賽」賽事期間拍攝。布萊德彼特在片中飾演退役後復出的賽車手，達姆森伊卓瑞斯則飾演他在虛構車隊「APXGP」中的隊友；
+                強大的卡司陣容還包含獲奧斯卡金像獎提名的凱莉肯頓、奧斯卡金像獎得主哈維爾巴登、艾美獎得主和獲金球獎提名的托比亞曼齊司、莎拉奈爾斯、金波德尼亞和山姆森卡優。
+            </p>
+            <a
+                href="https://youtu.be/pOX7LjrMaQY?si=8cGQ9BKNYSP27m-u"
+                target="_blank"
+                class="trailer-link">
+                ▶ 在Youtube觀看預告片
+            </a>
+        </div>
+        </div>
+
+        <!-- 電影 -->
+        <div class="movie-card wishlist" data-year="2026">
+        <div class="poster">
+            <img src="Image/100M.jpg" alt="電影海報">
+        </div>
+        <div class="movie-info">
+            <h2>一百公尺</h2>
+            <p class="tags">
+                <span class="tag year">2026</span>
+                <span class="tag status wishlist">想看</span>
+                <span class="tag">動漫</span>
+                <span class="tag">運動</span>
+            </p>
+            <p class="meta">
+                <span>首次上映年份：2025</span>｜
+                <span>觀看日期：-</span>
+            </p>
+            <p class="rating">⭐ 評分：-</p>
+            <p class="review">
+                因為天生跑得快，富樫不只獲得了「朋友」，還獲得了「容身之處」。為了躲避殘酷的現實，轉學生小宮拼命地不斷奔跑。為了教導小宮跑得更快的方法，
+                富樫邀請他下課後一起練習。找到了願意投入的事情後，小宮全心地追求自己的紀錄。此後兩人在一百公尺賽跑的領域裡，發展出既是競爭對手又是好友的關係。
+                幾年後，以天才跑者聞名於世，卻對自己必須持續獲勝而感到害怕的富樫的面前，出現了已經成為一流跑者的小宮——。
+            </p>
+            <a
+                href="https://youtu.be/zPiktFibtKU?si=n8ScXtnCS7uzIwz7"
+                target="_blank"
+                class="trailer-link">
+                ▶ 在Youtube觀看預告片
+            </a>
+        </div>
+        </div>
+
+        <!-- 電影 -->
+        <div class="movie-card wishlist" data-year="2026">
+        <div class="poster">
+            <img src="Image/Hero!Hito!.jpg" alt="電影海報">
+        </div>
+        <div class="movie-info">
+            <h2>冠軍之路</h2>
+            <p class="tags">
+                <span class="tag year">2026</span>
+                <span class="tag status wishlist">想看</span>
+                <span class="tag">記錄片</span>
+                <span class="tag">運動</span>
+            </p>
+            <p class="meta">
+                <span>首次上映年份：2026</span>｜
+                <span>觀看日期：-</span>
+            </p>
+            <p class="rating">⭐ 評分：-</p>
+            <p class="review">
+                從不被看好到世界之巔，這不只是一場棒球，這是台灣不屈不撓的精神，寫下最熱血的奇蹟，2026開年，與冠軍們一起重返榮耀！
+            </p>
+            <a
+                href="https://youtu.be/wIkAdaZV0sY?si=cqw0IqVwg6mc5okW"
+                target="_blank"
+                class="trailer-link">
+                ▶ 在Youtube觀看預告片
+            </a>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 品軒的電影清單</p>
+    </footer>
+    <button id="backToTop" title="回到頂部">⬆</button>
+    <script>
+        function filterByYear(year) {
+            const movies = document.querySelectorAll('.movie-card');
+
+            movies.forEach(movie => {
+                if (year === 'all' || movie.dataset.year === year) {
+                    movie.style.display = 'flex';
+                } else {
+                    movie.style.display = 'none';
+                }
+            });
+        }
+        filterByYear('all');
+
+        // 取得按鈕
+        const backToTopBtn = document.getElementById('backToTop');
+
+        // 滾動事件：捲動到一定距離才顯示
+        window.onscroll = function() {
+            if (document.documentElement.scrollTop > 800) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        };
+
+        // 點擊按鈕回到頂部
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // 平滑滾動
+            });
+        });
+    </script>
+</body>
+</html>

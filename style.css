@@ -1,0 +1,176 @@
+/* 全站設定 */
+body {
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* 標題區 */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 標籤跟篩選 */
+.filters {
+    margin-top: 15px;
+}
+
+.filters button {
+    margin: 5px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #ddd;
+}
+
+.tags {
+    margin: 8px 0;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 4px 10px;
+    margin-right: 6px;
+    border-radius: 14px;
+    font-size: 12px;
+}
+
+.tag.year {
+    background-color: #222;
+    color: white;
+}
+
+
+/* 主要內容 */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* 電影卡片 */
+.movie-card {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 海報 */
+.poster img {
+    width: 180px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* 已觀看 */
+.movie-card.watched {
+    border-left: 6px solid #2e7d32; /* 綠 */
+}
+/* 想看 */
+.movie-card.wishlist {
+    border-left: 6px solid #f9a825; /* 黃 */
+    background-color: #fffde7;
+}
+/* 狀態標籤 */
+.tag.status {
+    font-weight: bold;
+}
+
+.tag.status.watched {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.tag.status.wishlist {
+    background-color: #f9a825;
+    color: #333;
+}
+
+/* 文字區 */
+.movie-info {
+    flex: 1;
+}
+
+.meta {
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.rating {
+    margin: 8px 0;
+}
+
+/* 預告片 */
+.trailer iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.trailer-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.trailer-link:hover {
+    opacity: 0.85;
+}
+
+
+
+/* 頁尾 */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #777;
+}
+
+/* 回到頂部按鈕 */
+#backToTop {
+    position: fixed; /* 固定在視窗 */
+    bottom: 30px;    /* 距離底部 */
+    right: 30px;     /* 距離右邊 */
+    width: 50px;
+    height: 50px;
+    padding: 10px 15px;
+    line-height: 20px; /* 比高度小一點，箭頭就會往上 */
+    font-size: 18px;
+    border: none;
+     width: 50px; /* 寬度 */
+    height: 50px; /* 高度 = 寬度，保證圓形 */
+    font-size: 24px; /* 按鈕文字大小 */
+    border-radius: 50%;
+    background-color: #2e7d32;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    display: none; /* 預設隱藏，捲動才出現 */
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #1b4d20;
+}
+
